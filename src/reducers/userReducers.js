@@ -6,6 +6,7 @@ const users = createSlice({
     initialState: init,
     reducers: {
       logined(state, action) {
+        console.log(action);
         state.loginFlag = action.payload
       },
     },
