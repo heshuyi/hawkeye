@@ -8,12 +8,6 @@ module.exports = {
    addWebpackAlias({
      '@': path.resolve(__dirname, './src')
    }),
-  //  fixBabelImports('import', { 
-  //   libraryName: 'antd',
-  //   libraryDirectory: 'es',
-  //   style: true //或者true, true代表运用less
-  // }),
-  //  addWebpackPlugin(new webpack.ProgressPlugin()),
    addLessLoader({
      lessOptions: {
       localIdentName: '[local]--[hash:base64:5]'

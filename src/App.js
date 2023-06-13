@@ -1,10 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import {BrowserRouter} from 'react-router-dom'
 import WelcomePage from "./pages/WelcomePage/Welcome";
 import Home from "./pages/HomePage";
 import './app.less';
@@ -13,11 +9,9 @@ function App() {
   return (
     <div>
       {loginFlag ? (
-        <Router>
-          <Switch>
-            <Route path="/home" component={Home} />
-          </Switch>
-        </Router>
+        <BrowserRouter>
+        <Home/>
+        </BrowserRouter>
       ) : (
         <WelcomePage />
       )}
