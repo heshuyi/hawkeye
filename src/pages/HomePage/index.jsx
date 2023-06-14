@@ -48,12 +48,16 @@ const Home = (props) => {
         />
       </div>
       <div className='content-box'>
+        <div className='card-box'>
         <Switch>
-          <Route path='/home' component={InTimeTable} />
-          <Route path='/people' component ={PeoplePage}/>
-          <Route path='/monitor' component={MonitoringIndex}/>
-          <Route path='/errorTable' component={ErrorTablePage}/>
+          <Route key={1} path='/home' component={InTimeTable} />
+          <Route key={2} path='/people' component ={PeoplePage}/>
+          <Route key={3} path='/monitor' component={MonitoringIndex}/>
+          <Route key={4} path='/errorTable' component={ErrorTablePage}/>
+          <Route key={5} path='/' component={InTimeTable}/>
         </Switch>
+        </div>
+       
        
       </div>
     </div>

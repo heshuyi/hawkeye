@@ -2,12 +2,14 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { Form, Input, Checkbox, Button } from 'antd';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
+import axios from 'axios';
 import { logined } from '../../reducers/userReducers'
 import './index.less';
 function Welcome(props) {
 	const dispatch = useDispatch();
-	const onFinish = (values) => {
-		console.log('Success:', values);
+	const onFinish = async(values) => {
+		let d = await axios.post('/',{body:{a:1}})
+		console.log(d,'Success:', values);
 		dispatch(logined(true))
 	};
 	const onFinishFailed = (errorInfo) => {

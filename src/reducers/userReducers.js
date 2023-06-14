@@ -1,5 +1,5 @@
 import { CreateSliceOptions,createAsyncThunk, createSlice  } from "@reduxjs/toolkit";
-const init = {userId:'123',loginFlag:true}
+const init = {userId:'123',loginFlag:false}
 
 const users = createSlice({
     name: "user",
