@@ -1,7 +1,7 @@
 const webpack = require('webpack')
 const fs = require('fs')
 // const WebpackBar = require('webpackbar')
-const { override, fixBabelImports,addWebpackPlugin,devtool,adjustStyleLoaders,addLessLoader, addWebpackAlias } = require('customize-cra')
+const { override, fixBabelImports,addWebpackPlugin,adjustStyleLoaders,addLessLoader, addWebpackAlias } = require('customize-cra')
 const path = require('path')
 
 module.exports = {
