@@ -55,6 +55,7 @@ const Home = (props) => {
           <Route key={3} path='/monitor' component={MonitoringIndex}/>
           <Route key={4} path='/errorTable' component={ErrorTablePage}/>
           <Route key={5} path='/' component={InTimeTable}/>
+
         </Switch>
         </div>
        

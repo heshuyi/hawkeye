@@ -8,8 +8,8 @@ import './index.less';
 function Welcome(props) {
 	const dispatch = useDispatch();
 	const onFinish = async(values) => {
-		let d = await axios.post('/',{body:{a:1}})
-		console.log(d,'Success:', values);
+		// let d = await axios.post('/',{body:{a:1}})
+		// console.log(d,'Success:', values);
 		dispatch(logined(true))
 	};
 	const onFinishFailed = (errorInfo) => {

@@ -6,11 +6,6 @@ const path = require('path')
 
 module.exports = {
  webpack: override(
-  (config)=>{
-    fs.writeFileSync('wec.txt',JSON.stringify(config),(e)=>{console.log(e);})
-    config.devtool = 'source-map'
-    return config
-   },
    addWebpackAlias({
      '@': path.resolve(__dirname, './src')
    }),
@@ -23,8 +18,6 @@ module.exports = {
      const postcssOptions = postcss.options;
      postcss.options = { postcssOptions };
    }),
-   
-  
  ),
  
 }
